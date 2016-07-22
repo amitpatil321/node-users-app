@@ -30,6 +30,15 @@ app.get("/home",routes.home);
 app.get("/logout",routes.logout);
 app.get("/profile",routes.profile);
 app.get("/profile/:uid",routes.profile);
+// 404 error handling
+app.get('*', function(req, res){
+  res.render('404.jade');
+});
+
+// Handle 500 error
+app.use(function(error, req, res, next) {
+ res.send('500: Internal Server Error', 500);
+});
 
 var port = process.env.PORT || 3000;
 app.listen(port,function(){
