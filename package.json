@@ -1,0 +1,25 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Simple login page demo with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "login"
+  ],
+  "author": "Amit Patil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.0",
+    "jade": "^1.11.0",
+    "pug": "^2.0.0-beta4"
+  }
+}

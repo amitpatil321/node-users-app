@@ -1,0 +1,25 @@
+{
+  "users" : {
+  	 "admin" : {
+  	 	"id" 	   : "100",
+  	 	"username" : "admin",
+  	 	"password" : "admin",
+  	 	"email"	   : "admin@website.com",
+  	 	"role"	   : "Admin"	 
+  	 },
+  	 "manager" : {
+  	 	"id" 	   : "101",
+  	 	"username" : "manager",
+  	 	"password" : "manager",
+  	 	"email"	   : "manager@website.com",
+  	 	"role"	   : "Manager"	 
+  	 },
+  	 "account" :{
+  	 	"id" 	   : "102 ",
+  	 	"username" : "account",
+  	 	"password" : "account",
+  	 	"email"	   : "account@website.com",
+  	 	"role"	   : "Account"	 
+  	 }  	 
+  }
+}

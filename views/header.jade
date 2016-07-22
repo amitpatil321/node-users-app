@@ -1,0 +1,35 @@
+doctype htm
+html(lang="en")
+  head
+    title Users Management
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/style.css')
+  body
+    nav.navbar.navbar-default.container(style='height:40px;')
+        .navbar-header
+          a.navbar-brand(href='') User Management
+        ul.nav.navbar-nav
+          li
+            a(href='/home')
+              span.glyphicon.glyphicon-home
+              |  Home 
+        ul.nav.navbar-nav.navbar-right
+          if uinfo
+           li
+            a.uppercase(href='javascript:void(0);')
+              |  Welcome #{uinfo.name}  
+           li
+            a(href='/profile')
+              span.glyphicon.glyphicon-user
+              |  My Profile          
+           li
+            a(href='/logout')
+              span.glyphicon.glyphicon-log-in
+              |  Logout
+          else
+           li
+            a(href='/')
+              span.glyphicon.glyphicon-log-in
+              |  Login

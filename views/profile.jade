@@ -1,0 +1,21 @@
+include ./header.jade
+.wrapper.container
+ .row
+  .col-md-5
+   h3.uppercase #{profile.username}
+   table.table
+    tr
+     td Id
+     td #{profile.id}
+    tr
+     td Username
+     td #{profile.username}
+    tr
+     td Email
+     td #{profile.email}
+    tr
+     td Role
+     td #{profile.role}
+    tr
+     td(colspan="2"): a.btn.btn-info(href='/home') Back 
+    

@@ -1,0 +1,21 @@
+include ./header.jade
+.wrapper.container
+       table.table.table-hover
+        thead
+          tr
+            th Id
+            th Username
+            th Email
+            th Role
+            th View
+        tbody
+          each val, index in ulist
+           tr
+            td #{val.id}
+            td #{val.username}
+            td #{val.email}
+            td #{val.role}
+            td 
+             a(href='profile/#{val.id}') view
+
+  
